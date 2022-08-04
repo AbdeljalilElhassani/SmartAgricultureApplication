@@ -1,31 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima's Project</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body id="bodye">
-    <div class="container" id="container">
+<?php
+if(!isset($_GET['c'])){
+    $_GET['c']="";
+}
+?>
+<?php
+include('header.php');
+session_start();
+?>
+<button onclick="myFunction()" id="darkLightModeSwitch" class="darkModeButton">
 
-        <button onclick="myFunction()" id="darkLightModeSwitch" class="darkModeButton">
-
-        </button>
-        <div class="logo" id="logo">
-
-        </div>
-        <form method="get" action="" >
+</button>
+<div class="logo" id="logo">
+</div>
+        <form method="post" action="check.php" >
             <img src="./images/LoginIcon.png" alt="">
             <h1 id="loginText">Login</h1>
-            <input type="text" placeholder="Login">
-            <input type="password" placeholder="Password" >
-            <input type="submit" value="Login" class="loginBtn">
+            <input type="text" placeholder="Login" name="login">
+            <input type="password" placeholder="Password" name="pass" >
+            <?php 
+            if($_GET['c'] == "true"){
+                echo "<h3>Login Failed ! please try again !</h3>";
+            }
+            ?>
+            <input type="submit" value="Login" class="loginBtn" name="submit">
         </form>
 
 
-    </div>
-    <script src="./app.js"></script>
-</body>
-</html>
+    <?php
+    include('footer.php');
+    ?>

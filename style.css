@@ -116,5 +116,15 @@ h1 {
 
 }
 .lightModeButton{
-    background: url(./images/lightModeButtonIcon.png) !important;
+    background: url(./images/lightModeButtonIcon.png) no-repeat !important;
+}
+
+.terminsateSessionBtn{
+width: 88px;
+height: 111px;
+background: url(./images/LogOutBtnLight.png) no-repeat;
+border: none;
+position: absolute;
+bottom: 0;
+left: 25px;
 }
