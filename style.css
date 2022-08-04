@@ -5,6 +5,8 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: all 0.5s ease;
+
 }
 
 .container {
@@ -17,6 +19,8 @@ body {
     box-shadow: 11px 10px 12px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 11px 10px 12px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 11px 10px 12px 0px rgba(0, 0, 0, 0.75);
+    transition: background 0.5s ease;
+
 }
 
 .darkModeButton {
@@ -28,6 +32,8 @@ body {
     cursor: pointer;
     border: none;
     background: url(./images/darkModeButtonIcon.png);
+    transition: all 0.5s ease;
+
 }
 
 .logo {
@@ -37,6 +43,8 @@ body {
     left: 30px;
     top: -60px;
     background: url(./images/LogoLightIcon.png);
+    transition: all 0.5s ease;
+
 }
 
 form {
@@ -49,12 +57,16 @@ form {
     align-items: center;
     width: 90vw;
     height: 70%;
+    transition: all 0.5s ease;
+
 }
 
 form img {
     width: 129px;
     height: 122px;
     margin-bottom: -20px;
+    transition: all 0.5s ease;
+
 }
 
 input {
@@ -70,6 +82,8 @@ input {
     font-size: 32px;
     line-height: 48px;
     padding-left: 50px;
+    transition: all 0.5s ease;
+
 
 }
 
@@ -80,6 +94,7 @@ h1 {
     font-size: 32px;
     line-height: 48px;
     position: relative;
+    transition: all 0.5s ease;
 }
 
 .loginBtn {
@@ -116,7 +131,7 @@ h1 {
 
 }
 .lightModeButton{
-    background: url(./images/lightModeButtonIcon.png) no-repeat !important;
+    background: url(./images/lightModeButtonIcon.png) no-repeat center !important;
 }
 
 .terminsateSessionBtn{
@@ -127,4 +142,34 @@ border: none;
 position: absolute;
 bottom: 0;
 left: 25px;
+cursor: pointer;
+}
+.terminsateSessionBtnDark{
+    background: url(./images/LogOutBtnDark.png) no-repeat;
+
+}
+
+.Meter{
+    width: 200px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+
+}
+.airTempMeter{
+    left: 40%;
+}
+.airHumMeter{
+    left: 75%;
+}
+.soilTempMeter{
+    top: 65%;
+}
+.soilHumMeter{
+    left: 40%;
+    top: 65%;
+}
+.soilPhMeter{
+    left: 75%;
+    top: 65%;
 }

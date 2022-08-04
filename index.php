@@ -1,11 +1,12 @@
 <?php
+session_start();
+$_SESSION['id']="";
 if(!isset($_GET['c'])){
     $_GET['c']="";
 }
 ?>
 <?php
 include('header.php');
-session_start();
 ?>
 <button onclick="myFunction()" id="darkLightModeSwitch" class="darkModeButton">
 
