@@ -112,7 +112,9 @@ h1 {
 
 .logoDark{
     
-    background: url(./images/LogoDarkIcon.png) no-repeat  !important;
+    background: url(./images/LogoDarkIcon.png) no-repeat  !important
 
-
+}
+.lightModeButton{
+    background: url(./images/lightModeButtonIcon.png) !important;
 }

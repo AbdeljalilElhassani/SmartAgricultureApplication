@@ -7,10 +7,10 @@
     <title>Fatima's Project</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="bodye">
     <div class="container" id="container">
 
-        <button onclick="myFunction()" class="darkModeButton">
+        <button onclick="myFunction()" id="darkLightModeSwitch" class="darkModeButton">
 
         </button>
         <div class="logo" id="logo">
@@ -18,7 +18,7 @@
         </div>
         <form method="get" action="" >
             <img src="./images/LoginIcon.png" alt="">
-            <h1>Login</h1>
+            <h1 id="loginText">Login</h1>
             <input type="text" placeholder="Login">
             <input type="password" placeholder="Password" >
             <input type="submit" value="Login" class="loginBtn">
